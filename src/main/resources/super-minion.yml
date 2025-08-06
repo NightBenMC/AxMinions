@@ -1,0 +1,19 @@
+# Configuration for the Super Minion
+# 'range' is the distance (in blocks) the minion can break blocks from its location.
+# 'speed' is the delay (in ticks) between actions. 20 ticks = 1 second.
+levels:
+  1:
+    range: 3.0
+    speed: 100
+  2:
+    range: 3.5
+    speed: 90
+  3:
+    range: 4.0
+    speed: 80
+  4:
+    range: 4.5
+    speed: 70
+  5:
+    range: 5.0
+    speed: 60
