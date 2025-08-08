@@ -1,0 +1,7 @@
+# AxMinionsAddon Configuration
+#
+# This file allows you to enable or disable specific custom minions
+# provided by this addon.
+minions:
+  super-minion:
+    enabled: true

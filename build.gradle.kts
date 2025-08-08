@@ -23,9 +23,6 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
 
     // The AxMinions API is included in the main AxMinions plugin.
-    // You need to depend on the AxMinions plugin jar itself.
-    // The group and name are likely correct, but you will need to find the correct version.
-    // You can usually find this on the plugin's download page or by asking the developers.
     compileOnly("com.artillexstudios:axminions:LATEST") // Replace LATEST with the actual version of AxMinions you are using
 }
 

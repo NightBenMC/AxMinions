@@ -1,5 +1,5 @@
-name: SuperMinion
+name: AxMinionsAddon
 version: 1.0
-main: com.example.superminion.SuperMinionPlugin
+main: com.example.axminionsaddon.AxMinionsAddon
 api-version: 1.19
 depend: [AxMinions]

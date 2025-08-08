@@ -1,4 +1,4 @@
-package com.example.superminion
+package com.example.axminionsaddon.minions
 
 import com.artillexstudios.axapi.scheduler.Scheduler
 import com.artillexstudios.axapi.scheduler.impl.FoliaScheduler
@@ -21,13 +21,13 @@ import org.bukkit.block.BlockFace
 import org.bukkit.enchantments.Enchantment
 import org.bukkit.inventory.DoubleChestInventory
 import org.bukkit.inventory.FurnaceRecipe
-import org.bukkit.plugin.java.JavaPlugin
+import java.io.File
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import kotlin.math.roundToInt
 
-class SuperMinion(plugin: JavaPlugin) : MinionType("super-minion", plugin.getResource("super-minion.yml")!!, true) {
+class SuperMinion : MinionType("super-minion", File(AxMinionsAPI.INSTANCE.plugin.dataFolder, "minions/super-minion.yml").inputStream(), true) {
     companion object {
         private var asyncExecutor: ExecutorService? = null
         private val smeltingRecipes = ArrayList<FurnaceRecipe>()
