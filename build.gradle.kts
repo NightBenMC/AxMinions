@@ -11,11 +11,7 @@ repositories {
     mavenCentral()
     // Repository for Paper API
     maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
-    // Repository for AxMinions API - you might need to change this
-    // I could not find the repository URL. Please replace this with the correct one.
-    // It might be JitPack, or a custom repository from Artillex-Studios.
-    // For example: maven { url = uri("https://jitpack.io") }
-    // Or: maven { url = uri("https://repo.artillex-studios.com/snapshots") }
+    // Repository for AxMinions API
     maven { url = uri("https://repo.artillex-studios.com/releases") }
 }
 
@@ -26,11 +22,11 @@ dependencies {
     // Paper API
     compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
 
-    // AxMinions API - you will need to find the correct dependency string.
-    // I am using a placeholder here.
-    // You can often find this on the plugin's Spigot page, GitHub, or documentation.
-    // Example for JitPack: compileOnly("com.github.user:repo:tag")
-    compileOnly("com.artillexstudios:axminions-api:1.0.0") // This is a guess, please verify
+    // The AxMinions API is included in the main AxMinions plugin.
+    // You need to depend on the AxMinions plugin jar itself.
+    // The group and name are likely correct, but you will need to find the correct version.
+    // You can usually find this on the plugin's download page or by asking the developers.
+    compileOnly("com.artillexstudios:axminions:LATEST") // Replace LATEST with the actual version of AxMinions you are using
 }
 
 tasks.withType<KotlinCompile> {
